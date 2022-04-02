@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap');
+
+body{
+	padding: 0;
+	background: whitesmoke;
+}
+*{
+	font-family: 'Hind', sans-serif;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+	background: linear-gradient(to bottom, lightgray,darkgrey);
+	margin: 5px;
+
+}
+.lista__contenedor{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	margin: 0;
+	padding: 0;
+
+}
+.navegador__contenedor{
+	align-items: stretch;
+	display: flex;
+}
+.riko__logo{
+	height: 100px;
+	width: 100px;
+	object-fit: cover;
+	transition: .5s;
+	border: 2px transparent;
+	border-radius: 50%;
+}
+.riko__logo:hover{
+	transform: rotate(360deg);
+}
+.contenido{
+	margin: 0 5px;
+	background-color: lightgray;
+	display: flex;
+	justify-content: space-between;
+	flex-flow: column wrap;
+}
+.title{
+	display: flex;
+	align-self: stretch;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 2px solid black;
+}
+.logo{
+	display: flex;
+	align-items: center;
+
+}
+.p1{
+	margin: 0 0 0 8px;
+	padding: 0;
+	font-size: 50px;
+	font-weight: 800;
+	align-self: center;
+}
+.p2{
+	margin: 0;
+	padding: 0;
+	font-size: 42px;
+	align-self: center;
+}
+h1{
+	margin-bottom: 0;
+}
+.lista__item{
+	display: flex;
+	text-decoration: none;
+	padding: 0 15px;
+	align-items: center;
+	color: black;
+	font-size: 22px;
+	transition: .4s;
+}
+.lista__item li{
+	list-style: none;
+}
+.lista__item:nth-child(4){
+	padding: 0 30px 0 15px;
+}
+.lista__item:hover{
+	background-color: black;
+	color: ghostwhite;
+}
+.grid__contenedor{
+	display: grid;
+	grid-template-rows: repeat(4, 150px);
+	grid-template-columns: repeat(4, 150px);
+	justify-content: center;
+	grid-gap: 5px;
+}
+.grid__contenedor__img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+@media(max-width: 888px){
+	.lista__contenedor{
+		display: flex;
+		flex-direction: column;
+		flex-basis: 100%;
+		align-items: stretch;
+
+	}
+	.lista__item{
+
+		padding: 10px 0  !important;
+		flex-basis: 100%;
+		justify-content: center;
+
+
+	}
+	
+	header{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 5px;
+		flex-direction: column;
+		align-items: center;
+	}
+	.navegador__contenedor{
+		align-self: stretch;
+	}
+	.grid__contenedor{
+		display: grid;
+		grid-template-rows: repeat(8, 46vh);
+		grid-template-columns: repeat(2, 46vw);
+		justify-content: center;
+		grid-gap: 5px;
+		margin: 0 5px;
+	}
+}
