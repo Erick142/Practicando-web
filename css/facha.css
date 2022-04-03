@@ -104,6 +104,9 @@ h1{
 	width: 100%;
 	height: 100%;
 }
+.helow{
+	background: aqua;
+}
 @media(max-width: 888px){
 	.lista__contenedor{
 		display: flex;
