@@ -107,6 +107,22 @@ h1{
 .helow{
 	background: aqua;
 }
+.form{
+	display: flex;
+	flex-direction: column;;
+	align-items: stretch;
+}
+.form div{
+	text-align: center;
+	flex-basis: 100%;
+	margin: 10px;
+}
+#enviar{
+	align-self: center;
+	margin: 10px;
+
+}
+
 @media(max-width: 888px){
 	.lista__contenedor{
 		display: flex;
@@ -120,8 +136,6 @@ h1{
 		padding: 10px 0  !important;
 		flex-basis: 100%;
 		justify-content: center;
-
-
 	}
 	
 	header{
