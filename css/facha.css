@@ -107,6 +107,18 @@ h1{
 .helow{
 	background: aqua;
 }
+.boton__menu{
+	background: #939393;
+	padding: 10px;
+	border-radius: 50%;
+	align-self: flex-start;
+}
+.boton__click{
+	background: aqua;
+}
+.oculto{
+	display: none;
+}
 @media(max-width: 888px){
 	.lista__contenedor{
 		display: flex;
